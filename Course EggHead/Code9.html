@@ -24,26 +24,17 @@
     ></script>
     <script type="text/babel">
       const rootElement = document.getElementById("root");
-      const Message = ({ text }) => {
-        // console.log(text.length);
-        //js
-        return (
-          //jsx
+      function tick() {
+        const time = new Date().toLocaleTimeString();
+        const element = (
           <div>
-            {/*js*/}
-            {`This text ${text} contains `}
-            <strong> {text.length > 0 ? text.length : "NO"} </strong>
-            characters
+            <div>Hello guys</div>
+            <div>{time}</div>
           </div>
         );
-      };
-      const element = (
-        <>
-          <Message text="Sanyam" />
-          <Message text="" />
-        </>
-      );
-      ReactDOM.render(element, rootElement);
+        ReactDOM.render(element, rootElement);
+      }
+      setInterval(tick, 1000);
     </script>
   </body>
 </html>

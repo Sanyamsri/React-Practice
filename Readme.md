@@ -58,3 +58,25 @@ const element = (
 - while using {} the expression inside it is compiled to, in the react.createElement as a string as the third argument, we get this string.
 
 - We have react.createElement div, null for the props, and then the string and so on. If we wanted to, instead of passing this string, do some sort of if statement, that wouldn't work at all. It doesn't make any sense to pass a statement as an argument to a function
+
+- Working with ternary expressions in reactJs
+
+```jsx
+const Message = ({ text }) => {
+  // console.log(text.length);
+  //js
+  return (
+    //jsx
+    <div>
+      {/*js*/}
+      {`This text ${text} contains `}
+      <strong> {text.length > 0 ? text.length : "NO"} </strong>
+      characters
+    </div>
+  );
+};
+```
+
+- Whenever any element in DOM is changed in simple Javascript the whole DOM updates even its child elements who were not affected by the change , whenever state changes, you don't have to re-render your entire element whereas
+
+- When you create React elements, you trigger a re-render of a component, React is going to compare the elements that you returned this time with the elements that you returned last time nd then it will update the DOM surgically to only update the things that were different between the last time and this time you returned JSX.
