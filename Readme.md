@@ -1,6 +1,6 @@
-#React Notes
+# React Notes
 
-###React Introduction
+### React Introduction
 
 - JSX id not supported by browser. React Craete Element API creates an element for us.JSX is an html like syntax to create
 - To use JSX in brwoser we need a compiler like Babel Stand alone which will compile our JSX code in the brows
@@ -19,3 +19,5 @@
 ```
 
 - We can make reusable components in JSX.We can declarea component and then reuse it in another component by just inserting it like in html. The first letter should be capital
+
+-
