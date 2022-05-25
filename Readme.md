@@ -1,26 +1,21 @@
-<h1>React Notes<h1>
+#React Notes
 
-<h2>React Introduction<h2>
-<div>
-<ul>
-    <li>JSX id not supported by browser. React Craete Element API creates an element for us.JSX is an html like syntax to create UI</li>
-    <li>To use JSX in brwoser we need a compiler like Babel Stand alone which will compile our JSX code in the browser.</li>
-    <li>The babel finds a code in the script compiles it and inserts a new script that has the compiled code. So the browser can evaluate it.</li>
-    <li>{} is used for javascript expressions. Whatever in it that resolves to a value</li>
-    <li>React Fragmant impotance -
-     If we need to put two elemets side by side
-     In react.createelement, We cannot pass two variables side by side in the first argument, that's why JSX always needs to return a single component.
-     so instead what we can do is we can craete react fragment. The React fragment allows us to put elements side by side without having to have some sort of container element like a div. (<></>)
-     ``jsx
+###React Introduction
+
+- JSX id not supported by browser. React Craete Element API creates an element for us.JSX is an html like syntax to create
+- To use JSX in brwoser we need a compiler like Babel Stand alone which will compile our JSX code in the brows
+- The babel finds a code in the script compiles it and inserts a new script that has the compiled code. So the browser can evaluate
+- {} is used for javascript expressions. Whatever in it that resolves to a va
+- React Fragmant impotance :
+  If we need to put two elemets side by side
+  In react.createelement, We cannot pass two variables side by side in the first argument, that's why JSX always needs to return a single component.
+  so instead what we can do is we can craete react fragment. The React fragment allows us to put elements side by side without having to have some sort of container element like a div. (<></>)
+
+```jsx
 <>
   <span>hellow</span>
   <span>world</span>
 </>
 ```
-      </li>
-      <li>
-      We can make reusable components in JSX.We can declarea component and then reuse it in another component by just inserting it like in html. The first letter should be capital
-      </li>
-<ul>
 
-</div>
+- We can make reusable components in JSX.We can declarea component and then reuse it in another component by just inserting it like in html. The first letter should be capital
