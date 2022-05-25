@@ -19,8 +19,13 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel">
       const rootElement = document.getElementById("root");
-      cosnt msg
-      const element = <></>;
+      const Message = (props) => <div>{props.msg}</div>;
+      const element = (
+        <>
+          <Message msg="Hello world" />
+          <Message msg="Nya world" />
+        </>
+      );
       ReactDOM.render(element, rootElement);
     </script>
   </body>

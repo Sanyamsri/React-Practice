@@ -18,6 +18,14 @@
 </>
 ```
 
-- We can make reusable components in JSX.We can declarea component and then reuse it in another component by just inserting it like in html. The first letter should be capital
+- We can make reusable components in JSX.We can declarea component and then reuse it in another component by just inserting it like in html. The first letter should be capital and teh component would be a function or class with return value as JSX
 
--
+```jsx
+const Message = (props) => <div>{props.msg}</div>;
+const element = (
+  <>
+    <Message msg="Hello world" />
+    <Message msg="Nya world" />
+  </>
+);
+```
