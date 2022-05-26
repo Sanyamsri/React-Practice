@@ -80,3 +80,15 @@ const Message = ({ text }) => {
 - Whenever any element in DOM is changed in simple Javascript the whole DOM updates even its child elements who were not affected by the change , whenever state changes, you don't have to re-render your entire element whereas
 
 - When you create React elements, you trigger a re-render of a component, React is going to compare the elements that you returned this time with the elements that you returned last time nd then it will update the DOM surgically to only update the things that were different between the last time and this time you returned JSX.
+
+- for inline styles we need to use style attribute and pass an object like this
+
+```jsx
+const Box = ({ size, color }) => {
+  return (
+    <div className={`box box--${size}`} style={{ backgroundColor: `${color}` }}>
+      {size} {color} box
+    </div>
+  );
+};
+```
