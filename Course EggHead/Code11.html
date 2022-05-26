@@ -21,10 +21,7 @@
         width: 180px;
         height: 180px;
       }
-      .box--small {
-        width: 90px;
-        height: 90px;
-      }
+      
     </style>
   </head>
   
@@ -49,13 +46,14 @@
     <script type="text/babel">
       const rootElement = document.getElementById("root");
       const Box=({size,color})=>{
-        return <div className={`box box--${size}`} style={{backgroundColor:`${color}`}}>{size} {color} box</div>
+        return <div className={`box box--${size}`} style={{backgroundColor:"lightblue"}}>Small light blue box</div>
       }
       const element=
       (<div>
-        <Box size="small" color="lightblue"/>
-        <Box size="medium" color="pink"/>
-        <Box size="large" color="orange"/>
+        <Box/>
+        <div className="box box--small" style={{backgroundColor:"lightblue"}}>Small light blue box</div>
+        <div className="box box--medium" style={{backgroundColor:"pink"}}>medium pink box</div>
+        <div className="box box--large" style={{backgroundColor:"orange"}}>large orange box</div>
     </div>)
       ReactDOM.render(element,rootElement)
     </script>
